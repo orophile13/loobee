@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  z-index: 1; /* Ensure container content is above the video */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.container .tenor-gif-embed {
+  max-width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  display: flex;
+  gap: 25px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff; /* White text color */
+  background: linear-gradient(to right, #ff4d4d, #ff66b3); /* Gradient from red to pink */
+  padding: 10px 25px;
+  border-radius: 8px;
+  box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3); /* Shadow with reduced opacity */
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.btn a:hover {
+  background-color: #ff3385; /* Pink hover color */
+}
